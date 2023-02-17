@@ -12,12 +12,12 @@ terraform {
 }
 
 resource "flux_bootstrap_git" "this" {
-  url = "https://github.com/${var.username}/fleet-infra"
-  http = {
-    username = var.username
-    password = var.password
-  }
+  url = "ssh://git@github.com/${var.username}/fleet-infra"
   path = "clusters/test/limnocentral"
+  ssh = {
+    username    = "git"
+    private_key = "${file(var.private_key_pem_path)}"
+  }
   components_extra = [
     "image-reflector-controller",
     "image-automation-controller"
