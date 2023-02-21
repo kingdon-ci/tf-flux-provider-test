@@ -7,6 +7,7 @@ terraform {
   required_providers {
     flux = {
       source = "registry.terraform.io/fluxcd/flux"
+      # version = "0.24.0"
     }
   }
 }
