@@ -1,4 +1,4 @@
-/.terraform
-/kubeconfig-temp.yaml
-/id_ed25519
-/terraform.tfstate
+/**/.terraform
+/**/kubeconfig-temp.yaml
+/**/id_ed25519
+/**/terraform.tfstate
