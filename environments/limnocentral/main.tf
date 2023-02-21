@@ -1,5 +1,5 @@
 provider "flux" {
-  config_path = "~/tf-flux-provider-test/kubeconfig-temp.yaml"
+  config_path = "~/tf-flux-provider-test/environments/limnocentral/kubeconfig-temp.yaml"
 }
 
 terraform {
