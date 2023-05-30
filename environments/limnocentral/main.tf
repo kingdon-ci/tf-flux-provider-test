@@ -16,7 +16,7 @@ terraform {
   required_providers {
     flux = {
       source = "registry.terraform.io/fluxcd/flux"
-      version = "1.0.0-rc.3"
+      version = "1.0.0-rc.4"
     }
   }
 }
