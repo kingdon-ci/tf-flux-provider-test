@@ -27,4 +27,5 @@ resource "flux_bootstrap_git" "this" {
     "image-reflector-controller",
     "image-automation-controller"
   ]
+  version = "v2.0.0-rc.4"
 }
