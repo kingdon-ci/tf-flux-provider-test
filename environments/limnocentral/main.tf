@@ -16,7 +16,7 @@ terraform {
   required_providers {
     flux = {
       source = "registry.terraform.io/fluxcd/flux"
-      version = "1.0.0-rc.4"
+      version = "1.0.0-rc.5"
     }
   }
 }
@@ -27,5 +27,5 @@ resource "flux_bootstrap_git" "this" {
     "image-reflector-controller",
     "image-automation-controller"
   ]
-  version = "v2.0.0-rc.4"
+  # version = "v2.0.0-rc.5"
 }
