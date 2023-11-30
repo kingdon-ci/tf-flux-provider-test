@@ -16,7 +16,7 @@ terraform {
   required_providers {
     flux = {
       source = "registry.terraform.io/fluxcd/flux"
-      version = "1.0.1"
+      version = "1.1.2"
     }
   }
 }
@@ -27,5 +27,5 @@ resource "flux_bootstrap_git" "this" {
     "image-reflector-controller",
     "image-automation-controller"
   ]
-  # version = "v2.0.1"
+  kustomization_override = file("${path.module}/kustomization.yaml")
 }
